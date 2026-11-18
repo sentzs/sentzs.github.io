@@ -8,6 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jacques</title>
 
+
+
+
+  <style>
+    #meimei {
+      display: none;
+      margin-top: 15px;
+      max-width: 300px;
+    }
+  </style>
 </head>
 
 <body>
@@ -16,7 +26,19 @@
 
     <img src="jakues.png" alt="the main star of the show" width="300" height="200">
 
-    <img src="XY9triG2ToV6.gif" alt="the other star of the show" width="450" height="300">
+
+    <button onclick="showImage()">little surprise...</button>
+
+    <br>
+    <br>
+
+    <img id="meimei" src="XY9triG2ToV6.gif" alt="the other star of the show" width="450" height="300">
+
+    <script>
+      function showImage() {
+        document.getElementById("meimei").style.display = "block";
+      }
+    </script>
 
 </body>
 
